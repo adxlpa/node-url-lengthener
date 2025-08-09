@@ -1,7 +1,6 @@
-// public/script.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const lengthenBtn = document.getElementById('lengthenBtn');
+    const resetBtn = document.getElementById('resetBtn'); // New button
     const urlInput = document.getElementById('urlInput');
     const outputDiv = document.getElementById('output');
     const outputUrl = document.getElementById('outputUrl');
@@ -12,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     lengthenBtn.addEventListener('click', async () => {
         const originalUrl = urlInput.value.trim();
 
-        // Clear previous messages
         errorMessage.textContent = '';
         copyMessage.textContent = '';
         outputDiv.style.display = 'none';
@@ -23,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         try {
-            // Make a POST request to our backend API
             const response = await fetch('/api/lengthen', {
                 method: 'POST',
                 headers: {
@@ -35,11 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await response.json();
 
             if (!response.ok) {
-                // If response is not OK, throw an error with the message from the server
                 throw new Error(data.error || 'Something went wrong');
             }
 
-            // Display the result
             outputUrl.href = data.lengthenedUrl;
             outputUrl.textContent = data.lengthenedUrl;
             outputDiv.style.display = 'block';
@@ -47,6 +42,14 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             errorMessage.textContent = error.message;
         }
+    });
+
+    resetBtn.addEventListener('click', () => {
+        urlInput.value = ''; 
+        outputDiv.style.display = 'none'; 
+        errorMessage.textContent = ''; 
+        copyMessage.textContent = ''; 
+        urlInput.focus(); 
     });
 
     copyBtn.addEventListener('click', () => {

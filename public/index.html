@@ -1,11 +1,9 @@
-<!-- public/index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Working URL Lengthener</title>
+    <title>Badalink</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
     <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
@@ -13,14 +11,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>Working URL Lengthener</h1>
-        <p class="subtitle">Enter a URL to generate a new, longer, shareable link!</p>
+        <h1>Badalink</h1>
+        <p class="subtitle">The official anti-URL shortener</p>
         <div class="input-group">
-            <input type="url" id="urlInput" placeholder="[https://example.com](https://example.com)">
-            <button id="lengthenBtn">Lengthen URL</button>
+            <input type="url" id="urlInput" placeholder="(https://example.com)">
+            <button id="lengthenBtn">Stretch It!</button>
+            <button id="resetBtn">Reset</button>
         </div>
         <div id="output" class="output-container" style="display: none;">
-            <h2>Your Lengthened URL:</h2>
+            <h2>Behold, Your Epic Link!:</h2>
             <div class="result">
                 <a href="#" id="outputUrl" target="_blank"></a>
                 <button id="copyBtn">Copy</button>
