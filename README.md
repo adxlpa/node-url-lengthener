@@ -86,13 +86,13 @@ Installation: Step-by-step commands for cloning the repository, installing depen
 Inline Code Comments: The server.js file is commented throughout to explain the purpose of each major code block. This includes clarifying the server setup, the logic behind the API endpoint, the sentence generation process, and the redirect mechanism, making the codebase self-documenting and easy for another developer to follow.
 
 # Screenshots (Add at least 3)
-<img width="1800" alt="Screen" src="https://github.com/adxlpa/node-url-lengthener#:~:text=36%20minutes%20ago-,Screenshot1.png,-Add%20files%20via">
+<img width="1800" height="1169" alt="Screenshot1" src="https://github.com/user-attachments/assets/1636ff27-004b-40b1-a415-4f8864e2379c" />
 Starting page of our project
 
-<img width="1800" alt="Screen" src="https://github.com/adxlpa/node-url-lengthener#:~:text=2%20minutes%20ago-,Screenshot2.png,-Add%20files%20via">
+<img width="1800" height="1169" alt="Screenshot2" src="https://github.com/user-attachments/assets/1727bc64-abc9-47db-b795-e35da8ea7f44" />
 Copying the link to lengthen it
 
-<img width="1800" alt="Screen" src="https://github.com/adxlpa/node-url-lengthener#:~:text=3%20minutes%20ago-,Screenshot3.png,-Add%20files%20via">
+<img width="1800" height="1169" alt="Screenshot3" src="https://github.com/user-attachments/assets/e7364d52-33d5-4dcc-b7db-30c118be861c" />
 Link after lengthen it
 
 # Diagrams
